@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para ti ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PORTADA
+    ========================== -->
+
+    <section id="inicio" class="pantalla inicio">
+
+        <!-- Luces de fondo -->
+        <div class="luces">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Corazones flotando -->
+        <div class="corazones">
+            <span>♡</span>
+            <span>♡</span>
+            <span>♡</span>
+            <span>♡</span>
+            <span>♡</span>
+            <span>♡</span>
+            <span>♡</span>
+        </div>
+
+        <!-- Contenido -->
+        <div class="contenido-inicio">
+
+            <div class="pequeno">
+                PARA TI
+            </div>
+
+            <div class="linea-decorativa">
+                <span></span>
+                <i>♡</i>
+                <span></span>
+            </div>
+
+            <p class="introduccion">
+                Tengo algo que quiero decirte...
+            </p>
+
+            <h1>
+                Para la persona
+                <span>que hace especial</span>
+                mi vida
+            </h1>
+
+            <p class="subtitulo">
+                Una pequeña sorpresa hecha con todo mi amor,
+                especialmente para ti.
+            </p>
+
+            <div class="tiempo-juntos">
+                <span>♥</span>
+
+                <p>
+                    1 año y 4 meses
+                    <small>de nuestra historia</small>
+                </p>
+
+                <span>♥</span>
+            </div>
+
+            <button onclick="abrirSorpresa()" class="boton-sorpresa">
+
+                <span>Entrar a nuestra historia</span>
+
+                <b>♥</b>
+
+            </button>
+
+            <p class="abajo">
+                Hecho especialmente para ti
+            </p>
+
+        </div>
+
+        <!-- Indicador inferior -->
+        <div class="indicador">
+            <span></span>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MENSAJE
+    ========================== -->
+
+    <section id="mensaje" class="seccion oculto">
+
+        <div class="contenedor">
+
+            <span class="icono">💌</span>
+
+            <h2>Antes de continuar...</h2>
+
+            <p>
+                Hay cosas que a veces son difíciles de decir
+                con palabras, así que decidí intentar expresarlas
+                de una manera diferente.
+            </p>
+
+            <p>
+                Esta pequeña página es para recordar algunos
+                de los momentos que hemos compartido.
+            </p>
+
+            <button onclick="mostrarSeccion('historia')">
+                Continuar ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         HISTORIA
+    ========================== -->
+
+    <section id="historia" class="seccion oscuro oculto">
+
+        <div class="contenedor">
+
+            <span class="icono">📖</span>
+
+            <h2>Nuestra historia</h2>
+
+            <p>
+                1 año y 4 meses de momentos que quiero guardar
+                para siempre.
+            </p>
+
+            <div class="momento">
+
+                <img
+                    src="fotos/foto1.jpg"
+                    alt="Nuestro recuerdo">
+
+                <div>
+
+                    <span class="fecha">
+                        Nuestro comienzo ❤️
+                    </span>
+
+                    <h3>
+                        El día que todo comenzó
+                    </h3>
+
+                    <p>
+                        Esta es la primera foto que tenemos jutos,
+                        asi fue que todo esto comenzó.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="momento">
+
+                <img
+                    src="fotos/foto2.jpg"
+                    alt="Nuestro recuerdo">
+
+                <div>
+
+                    <span class="fecha">
+                        Un momento especial
+                    </span>
+
+                    <h3>
+                        Un recuerdo que nunca olvidaré
+                    </h3>
+
+                    <p>
+                        La primera cita que tuvimos, com olvidar aquel dia,
+                        La primera foto que te tome con las flores que te regale.
+                        Tan rapido a pasado el tiempo!!
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="momento">
+
+                <img
+                    src="fotos/foto18.jpg"
+                    alt="Nuestro recuerdo">
+
+                <div>
+
+                    <span class="fecha">
+                        Hoy ❤️
+                    </span>
+
+                    <h3>
+                        Y aquí seguimos...
+                    </h3>
+
+                    <p>
+                        Despues de todo lo que hemos pasado, aqui seguimos,
+                        No cambiaria por nada en el mundo todo lo que eh vivido contigo.
+                        
+                        TE AMOOO CON TODO MI SER.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button onclick="mostrarSeccion('galeria')">
+                Ver nuestras fotos 📸
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALERÍA
+    ========================== -->
+
+    <section id="galeria" class="seccion oculto">
+
+        <div class="contenedor">
+
+            <span class="icono">📸</span>
+
+            <h2>Nuestros momentos</h2>
+
+            <p>
+                Algunos de mis recuerdos favoritos contigo.
+            </p>
+
+
+<!-- =========================
+     18 FOTOS
+========================== -->
+
+<div class="galeria">
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto1.jpg"
+            alt="Foto 1"
+            data-frase="El comienzo de una historia que nunca imaginé que llegaría a significar tanto para mí. Y hoy, después de 1 año y 4 meses, me siento muy feliz de seguir escribiendo esta historia contigo."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Nuestra primera foto juntos, El inicio de todo esto!!!  ❤️🥰
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto2.jpg"
+            alt="Foto 2"
+            data-frase="Uno de esos momentos que quizá parecen pequeños, pero que para mí se quedan guardados para siempre. Porque cuando estoy contigo, cualquier momento se vuelve especial."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Nuestra primera cita, como olvidar ese momento tan bonito, 
+            donde los 2 estabamos nerviosos y donde ocurrio nuestro primer beso. 
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto3.jpg"
+            alt="Foto 3"
+            data-frase="Si pudiera volver a vivir este momento, lo haría sin pensarlo. Porque estar contigo y compartir mi vida a tu lado es uno de los regalos más bonitos que tengo."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Otro recuerdo muy bonito, de las primeras fotos que nos tomabamos, 
+            no importaba el tiempo que nos vieramos, lo importante era estar juntosss❤️
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto4.jpg"
+            alt="Foto 4"
+            data-frase="Cada recuerdo contigo tiene un lugar especial en mi corazón. No importa cuánto tiempo pase, siempre voy a querer recordar estos momentos."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Un momento que quiero recordar siempre, son nuestras primeras fotos en el sabino,
+            el lugar donde hemos pasado muchas cosas juntos.
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto5.jpg"
+            alt="Foto 5"
+            data-frase="Me encanta mirar nuestras fotos y darme cuenta de cuántos momentos hemos compartido. Y lo mejor es saber que todavía nos quedan muchísimos por vivir."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+                Otro dia mas con la mujer que amoooo ❤️
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto6.jpg"
+            alt="Foto 6"
+            data-frase="Hay momentos que quisiera guardar para siempre, y este es uno de ellos. Porque contigo hasta un día cualquiera puede convertirse en un recuerdo inolvidable."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Esta foto tambien muy especial, me acuerdo que te dolia la cabeza y aun asi 
+            bajaste a verme, se puedo notar que ya estabas harta de mi jaja
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto7.jpg"
+            alt="Foto 7"
+            data-frase="Cuando veo esta foto, solo puedo pensar en lo bonito que ha sido compartir parte de mi vida contigo."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Senti muy bonito cuando hiciste eso.
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto8.jpg"
+            alt="Foto 8"
+            data-frase="No cambiaría ninguno de los momentos que hemos vivido. Cada uno de ellos nos ha llevado hasta donde estamos hoy."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Otro dia mas con mi mujer bonitaaaaaaaaaa ❤️
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto9.jpg"
+            alt="Foto 9"
+            data-frase="A veces una fotografía puede guardar mucho más que una imagen. Puede guardar sentimientos, recuerdos y una parte de nuestra historia."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Grabé en la penca de un maguey tu nombre, Unido al mío, entrelazados, Como una prueba ante la ley del monte
+Que allí estuvimos enamorados 🌵✍️
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto10.jpg"
+            alt="Foto 10"
+            data-frase="Gracias por todos esos momentos en los que simplemente estar contigo ha sido suficiente para hacerme feliz."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            El primer San Valentin que pasamos juntos, otro momentomuy bonito que pase a tu lado ❤️
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto11.jpg"
+            alt="Foto 11"
+            data-frase="Cada vez que miro nuestras fotos recuerdo por qué te quiero tanto y por qué sigo eligiéndote."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Siempre te elegiría a ti por que contigo suy muy feliz. ❤️
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto12.jpg"
+            alt="Foto 12"
+            data-frase="Quiero seguir llenando mi galería, mi memoria y mi vida de momentos contigo."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Una foto de nuestros collares, los cuales representan el compromiso que tenemos ❤️♾️
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto13.jpg"
+            alt="Foto 13"
+            data-frase="Después de todo este tiempo, todavía encuentro nuevas razones para sonreír cuando estoy contigo."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Después de todo este tiempo... Sigues siendo tú ❤️‍🩹
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto14.jpg"
+            alt="Foto 14"
+            data-frase="Quiero que algún día podamos mirar todas estas fotografías y recordar todo lo que hemos construido juntos."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Otra foto mas con mi mujeeeeeeeeeeeeeeeeeeeer 💞🌹
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto15.jpg"
+            alt="Foto 15"
+            data-frase="Gracias por cada sonrisa, cada abrazo, cada momento y cada recuerdo que has dejado en mi vida."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Gracias por cada momento a tu lado, me haz hecho muy felizzzzzz  🥹
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto16.jpg"
+            alt="Foto 16"
+            data-frase="Si pudiera pedir algo, sería seguir viviendo momentos como este a tu lado durante muchísimo tiempo."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            La mujer mas bella para mi 🫶🏻
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto17.jpg"
+            alt="Foto 17"
+            data-frase="Todo lo que hemos vivido forma parte de una historia que significa muchísimo para mí."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+          Espero pasar mas momentos asi a tu lado.
+        </div>
+    </div>
+
+
+    <div class="foto-con-texto">
+        <img
+            src="fotos/foto18.jpg"
+            alt="Foto 18"
+            data-frase="Después de todo lo que hemos pasado, aquí seguimos. No cambiaría por nada en el mundo todo lo que he vivido contigo. Te amo con todo mi ser."
+            onclick="abrirFoto(this)">
+        <div class="texto-sobre-foto">
+            Y despues de todos los momentos que tenemos, llegamos hasta aqui, nunca olvidare cada uno de ellos, ya que son muy especiales para mi...❤️‍🩹🥹
+        </div>
+    </div>
+
+</div>
+<button onclick="abrirMusica()">
+    Continuar ❤️
+</button>
+</section>
+<!-- =========================
+     VISOR DE FOTOS
+========================== -->
+
+<dialog id="visorFoto" class="visor-foto">
+
+    <button
+        class="cerrar-foto"
+        onclick="cerrarFoto()"
+        aria-label="Cerrar foto">
+        ×
+    </button>
+
+    <div class="visor-contenido">
+
+        <button
+            class="boton-foto boton-regresar"
+            onclick="fotoAnterior()">
+            ← Regresar
+        </button>
+
+        <div class="foto-con-texto">
+
+            <img
+                id="fotoGrande"
+                src=""
+                alt="">
+
+            <div id="textoFoto"></div>
+
+        </div>
+
+        <button
+            class="boton-foto boton-continuar"
+            onclick="fotoSiguiente()">
+            Continuar →
+        </button>
+
+    </div>
+
+</dialog>
+
+    <!-- =========================
+         MÚSICA
+    ========================== -->
+
+    <section id="musica" class="seccion oscuro oculto">
+
+        <div class="contenedor">
+
+            <span class="icono">🎵</span>
+
+            <h2>Nuestra canción</h2>
+
+            <p>
+                Una canción que quiero compartir contigo.
+            </p>
+
+            <div class="reproductor">
+
+                <div class="disco">
+                    ❤️
+                </div>
+
+                <h3>
+                    Nuestra canción
+                </h3>
+
+                <p>
+                    Una canción especial para nosotros.
+                </p>
+
+                <audio controls>
+
+                    <source
+                        <source src="musica/hasta-la-muerte.mp3" type="audio/mpeg">
+
+                    Tu navegador no puede reproducir este audio.
+
+                </audio>
+
+            </div>
+
+            <button onclick="mostrarSeccion('razones')">
+                Hay algo más... ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         RAZONES
+    ========================== -->
+
+    <section id="razones" class="seccion oculto">
+
+        <div class="contenedor">
+
+            <span class="icono">🥰</span>
+
+            <h2>
+                10 razones por las que te amo
+            </h2>
+
+            <div class="razones">
+
+                <div class="razon">
+                    <span>01</span>
+
+                    <p>
+                        Porque haces mis días mucho más bonitos.
+                    </p>
+                </div>
+
+                <div class="razon">
+                    <span>02</span>
+
+                    <p>
+                        Porque contigo puedo ser completamente yo.
+                    </p>
+                </div>
+
+                <div class="razon">
+                    <span>03</span>
+
+                    <p>
+                        Porque tu sonrisa tiene algo que me encanta.
+                    </p>
+                </div>
+
+                <div class="razon">
+                    <span>04</span>
+
+                    <p>
+                        Porque siempre hay algo nuevo que descubrir de ti.
+                    </p>
+                </div>
+
+                <div class="razon">
+                    <span>05</span>
+
+                    <p>
+                        Porque nuestros momentos juntos significan
+                        muchísimo para mí.
+                    </p>
+                </div>
+
+                <div class="razon">
+                    <span>06</span>
+
+                    <p>
+                        Porque me haces sentir muy afortunado.
+                    </p>
+                </div>
+
+                <div class="razon">
+                    <span>07</span>
+
+                    <p>
+                        Porque incluso los momentos sencillos contigo
+                        son especiales.
+                    </p>
+                </div>
+
+                <div class="razon">
+                    <span>08</span>
+
+                    <p>
+                        Porque eres una persona que quiero cuidar
+                        y valorar.
+                    </p>
+                </div>
+
+                <div class="razon">
+                    <span>09</span>
+
+                    <p>
+                        Porque después de 1 año y 4 meses
+                        sigo eligiéndote.
+                    </p>
+                </div>
+
+                <div class="razon">
+                    <span>10</span>
+
+                    <p>
+                        Porque simplemente te amo. ❤️
+                    </p>
+                </div>
+
+            </div>
+
+            <button onclick="mostrarSeccion('carta')">
+                Leer mi carta 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CARTA
+    ========================== -->
+
+    <section id="carta" class="seccion oscuro oculto">
+
+        <div class="contenedor carta-contenido">
+
+            <span class="icono">💌</span>
+
+            <h2>Para ti...</h2>
+
+            <div class="texto-carta">
+
+                <p>
+                    Amor:
+                </p>
+
+                <p>
+                  Amooooooor ❤️, quiero decirte que, a pesar de todos los problemas que tengamos, yo siempre estaré para ti. Nunca soltaré tu mano por nada en el mundo. Quiero estar contigo y formar algo bonito a tu lado. 🥺❤️
+
+Espero que te guste esto que te hice. No es mucho, pero al menos quisiera alegrarte la vida y que te des cuenta de lo mucho que eres para mí. 🥹❤️
+
+Lo hice con todo mi corazón, especialmente para ti. ❤️✨
+                </p>
+
+                <p>
+                    Te amo con todo mi corazón. ❤️ Espero poder estar siempre junto a ti, porque cada vez que estoy a tu lado me haces muy feliz. 🥹❤️ Eres una persona muy especial para mí y no cambiaría por nada todos esos momentos que compartimos juntos. 💕
+
+                </p>
+
+                <p>
+                 Quiero seguir viviendo momentos hermosos a tu lado, creando recuerdos que podamos guardar para siempre, disfrutando cada aventura y cada instante juntos. ❤️
+
+                </p>
+
+                <p>
+                    Gracias por formar parte de mi vida.
+                </p>
+
+                <p class="firma">
+                    Con todo mi amor ❤️
+                </p>
+
+            </div>
+
+            <button onclick="mostrarSeccion('final')">
+                Hay una última cosa... ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FINAL
+    ========================== -->
+
+    <section id="final" class="pantalla final oculto">
+
+        <div class="estrellas">
+            ✦ ✧ ✦ ✧ ✦ ✧ ✦
+        </div>
+
+        <div class="contenido-final">
+
+            <p>
+                1 año y 4 meses...
+            </p>
+
+            <h1>
+                Y todavía siento<br>
+                que esto apenas<br>
+                comienza. ❤️
+            </h1>
+
+            <p class="final-texto">
+                Quiero seguir escribiendo nuestra historia
+                contigo.
+            </p>
+
+            <div class="corazon-final">
+                ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
